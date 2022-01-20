@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor &#8211; site Oficial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e96b8732d7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="#header" id="logo">Igor</a>
+            <div id="menuMobile">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div id="redes">
+                <a href="#" style="--content: 'instagram';" class="navLink">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" style="--content: 'twitter';" class="navLink">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" style="--content: 'facebook';" class="navLink">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" style="--content: 'youtube';" class="navLink">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" style="--content: 'twitch';" class="navLink">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="#" style="--content: 'tiktok';" class="navLink">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </nav>
+        <div id="container">
+            <section id="musica">
+                <div id="esquerda">
+                    <span>Disponivel Agora</span>
+                    <h2>O feitiço Voltou</h2>
+                    <a href="https://igor.lnk.to/ofv" class="btn" target="_blank">Ouça Agora</a>
+                </div>
+                <div id="direita">
+                    <img src="img/capafeitico.jpg" class="feitico" draggable="false">
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('nav');
+            let nav = document.getElementById('redes');
+
+            header.classList.toggle("ativo", window.scrollY > 0)
+            nav.classList.toggle("active", window.scrollY > 0)
+        })
+    </script>
+    <script src="js/mobile-navbar.js"></script>
+    <script src="js/video-galley.js"></script>
+</body>
+
+</html>
