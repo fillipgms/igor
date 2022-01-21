@@ -1,5 +1,0 @@
-azul =    #0BB9FE
-amarelo = #F2AB27
-rosa =    #F229E5
-
-roxo =    #161034
