@@ -246,6 +246,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #wrapper h2 {
@@ -322,24 +323,18 @@ nav {
 
 input::placeholder {
     color: #F0E8EB;
+    font-family: Mulish;
+}
+
+.form-input {
+    border-bottom: 1px solid #ccc;
 }
 
 input {
     background: none;
     height: 2.5rem;
     border: none;
-    border-bottom: solid 2px #F0E8EB;
     width: 100%;
-    transition: border ease .3s;
-}
-
-.client::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #b81f22;
-    display: block;
-    margin-top: -2px;
 }
 
 input:focus {
@@ -347,13 +342,41 @@ input:focus {
     border: none;
 }
 
-#submit {
-    border: none;
+.line {
+    height: 2px;
+    width: 100%;
+    display: block;
 }
 
-.form-input:focus .client::after  {
-    width: 100%;
-    transition: width ease .3s;
+.form-input:focus ~ .line {
+    animation: ease .4s;
+    animation-name: grow;
+    background-color: #b81f22;
+}
+
+@keyframes grow {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#submit {
+    background-color: #F0E8EB;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #01060A;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin: 20px 0;
+    font-weight: 700;
 }
 
 label span {
