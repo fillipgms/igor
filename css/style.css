@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@
 body {
     font-family: mieb;
     min-height: 120vh;
-    background: #11002D;
+    background: #01060A;
     overflow-x: hidden;
 }
 
@@ -39,6 +40,7 @@ header {
     max-height: 70vh;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     max-height: calc(100vh - 40px);
     border-bottom: solid 2px #F2AB27;
 }
@@ -180,6 +182,117 @@ nav {
     }
 }
 
+#aboutArea {
+    padding: 80px 0 50px;
+    border-bottom: solid 2px #F2AB27;
+}
+
+#profile {
+    display: flex;
+    max-width: 720px;
+    margin: 0 auto;
+    color: #F0E8EB;
+    align-items: center;
+    gap: 1.5em;
+    transition: ease .3s;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#profilePic {
+    max-width: 100%;
+    flex: 0 0 50%;
+}
+
+#profilePic img {
+    max-width: 100%;
+}
+
+#about {
+    flex: 0 0 50%;
+}
+
+#about h3 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 17px;
+    margin-bottom: 40px;
+    font-family: 'Mulish', sans-serif;
+}
+
+#songs {
+    background-image: url(../img/wallpaper.png);
+    padding: 80px 0 50px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#wrapper {
+    text-align: center;
+    color: #F0E8EB;
+    width: 40%;
+    border: solid 2px #F229E5;
+    border-radius: 25px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.songs div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#wrapper h2 {
+    margin-bottom: 10px;
+}
+
+.songs {
+    text-align: left;
+    padding: 10px;
+}
+
+.songs h3 {
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.songs div {
+    max-height: 100%;
+}
+
+.songs div i {
+    transition: color ease .3s;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.songs div i:hover {
+    color: #b81f22;
+}
+
+.songs div img {
+    max-width: 100%;
+    max-height: 10rem;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    #profile {
+        max-width: 1140px;
+    }
+
+    #profilePic {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+}
+
 @media (max-width: 820px) {
     #musica {
         flex-direction: column-reverse;
@@ -234,6 +347,23 @@ nav {
     #menuMobile {
         display: block;
     }
+
+    #profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #profilePic {
+        padding: 0 15px;
+    }
+
+    #about {
+        padding: 0 10px;
+    }
+
+    #wrapper {
+        width: 70%;
+    }
 }
 
 @media (max-width: 820px) and (orientation: landscape) {
@@ -256,4 +386,22 @@ nav {
     .bnt {
         font-size: .5rem;
     }
+
+    #profile {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    #about {
+        text-align: left;
+    }
+
+    #about h3 {
+        font-size: 100%;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
 }
+
