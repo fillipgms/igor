@@ -11,7 +11,7 @@ function navlistActive() {
             index / 7 + 0.3
           }s`);
     });
-    navigator.vibrate(200);
+    navigator.vibrate(100);
 }
 
 

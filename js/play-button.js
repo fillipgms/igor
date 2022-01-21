@@ -2,7 +2,7 @@ document.querySelectorAll(".play").forEach(play => {
     play.addEventListener("click", () => {
         play.classList.toggle("fa-play-circle")
         play.classList.toggle("fa-pause-circle")
-        navigator.vibrate(200);
+        navigator.vibrate(100);
     })
 })
 
