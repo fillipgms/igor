@@ -282,6 +282,84 @@ nav {
     display: block;
 }
 
+#news {
+    padding: 80px 0 50px;
+    color: #F0E8EB;
+    background: #01060A;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tittle {
+    text-align: left;
+    display: flex;
+    color: #01060A;
+}
+
+#tittle h3 {
+    font-size: calc(.1vw + 25px);
+    background: #0BB9FE;
+    padding: 5px 10px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px #0BB9FE;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+}
+
+#letter div{
+    text-align: left;
+    max-width: 450px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+input::placeholder {
+    color: #F0E8EB;
+}
+
+input {
+    background: none;
+    height: 2.5rem;
+    border: none;
+    border-bottom: solid 2px #F0E8EB;
+    width: 100%;
+    transition: border ease .3s;
+}
+
+.client::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #b81f22;
+    display: block;
+    margin-top: -2px;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+#submit {
+    border: none;
+}
+
+.form-input:focus .client::after  {
+    width: 100%;
+    transition: width ease .3s;
+}
+
+label span {
+    color: #b81f22;
+}
+
 @media (min-width: 1200px) {
     #profile {
         max-width: 1140px;

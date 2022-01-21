@@ -21,13 +21,15 @@
                 <div class="line3"></div>
             </div>
             <div id="redes">
-                <a href="https://instagram.com/igeoerri" target="_blank" style="--content: 'instagram';" class="navLink">
+                <a href="https://instagram.com/igeoerri" target="_blank" style="--content: 'instagram';"
+                    class="navLink">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://twitter.com/igeoerri" target="_blank" style="--content: 'twitter';" class="navLink">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="https://www.facebook.com/bonecasrift" target="_blank" style="--content: 'facebook';" class="navLink">
+                <a href="https://www.facebook.com/bonecasrift" target="_blank" style="--content: 'facebook';"
+                    class="navLink">
                     <i class="fab fa-facebook"></i>
                 </a>
                 <a href="https://www.youtube.com/igor" target="_blank" style="--content: 'youtube';" class="navLink">
@@ -86,10 +88,30 @@
                         <i class="fas fa-play-circle play" id="playFeitico"></i>
                     </div>
                 </div>
-                
+
             </div>
         </section>
     </main>
+    <footer>
+        <div id="news">
+            <div id="tittle">
+                <h3>Inscreva-se</h3>
+            </div>
+            <form action="/" method="post" id="letter">
+                <div class="client">
+                    <label for="client-email">Nome <span>*</span></label> <br>
+                    <input type="text" name="name" id="client-name" autocomplete="name" placeholder="Nome (obrigatório)" class="form-input" required>
+                </div>
+                <div class="client">
+                    <label for="client-email">Email <span>*</span></label> <br>
+                    <input type="email" name="emailadress" id="client-email" autocomplete="email"
+                        placeholder="Email (obrigatório)" class="form-input" required>
+                </div>
+
+                <input type="submit" value="Enviar" id="submit">
+            </form>
+        </div>
+    </footer>
 
     <script>
         window.addEventListener('scroll', function () {
