@@ -368,6 +368,10 @@ nav {
     .songs h3 {
         font-size: 1rem;
     }
+
+    #songs {
+        background-image: url(../img/wallpaper.png);
+    }
 }
 
 @media (max-width: 820px) and (orientation: landscape) {
