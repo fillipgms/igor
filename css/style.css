@@ -381,7 +381,18 @@ input:focus {
     border: none;
     margin: 20px 0;
     font-weight: 700;
+    transition: background ease .3s, border ease .3s, color ease .3s;
 }
+
+#submit:hover {
+    background: transparent;
+    border: solid 2px #0BB9FE;
+    color: #F0E8EB;
+}
+
+#submit:focus {
+    transform: scale(.7);
+} 
 
 label span {
     color: #b81f22;
