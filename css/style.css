@@ -283,6 +283,10 @@ nav {
     display: block;
 }
 
+footer {
+    border-top: solid 2px #0BB9FE;
+}
+
 #news {
     padding: 80px 0 50px;
     color: #F0E8EB;
